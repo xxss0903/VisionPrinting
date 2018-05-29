@@ -14,6 +14,10 @@
     width: 100%;
 }
 
+.mine-title{
+  display: inline-block;
+}
+
 .line{
     height: 1px;
     background: black;

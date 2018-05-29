@@ -84,7 +84,9 @@ Page({
 
   tapMineItem: function (event) {
     var url = event.target.dataset.url
-    console.log('点击' + event.target.dataset.url)
+    var index = event.target.dataset.index
+    console.log("点击  " + index)
+    console.log(event)
     if (url != undefined) {
       wx.navigateTo({
         url: url,

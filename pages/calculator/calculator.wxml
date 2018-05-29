@@ -27,6 +27,11 @@
       </picker>
     </view>
   </view>
+<checkbox-group bindchange="checkCraftChanged">
+  <label class="checkbox" wx:for="{{craftList}}">
+    <checkbox value="{{item.code}}" checked="{{item.checked}}"/>{{item.name}}
+  </label>
+</checkbox-group>
 
   <view class="amount">
     请输入数量:

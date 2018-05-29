@@ -4,8 +4,8 @@
 
 <block wx:for="{{mineList}}">
     <view class="line"></view>
-    <view class="mine-item" bindtap="tapMineItem" data-url="{{item.url}}">
-        <view class="mine-title">{{item.title}}</view>
+    <view class="mine-item"  bindtap='tapMineItem'  data-url="{{item.url}}" data-index="{{index}}">
+        <view class="mine-title" bindtap='tapMineItem' data-url='{{item.url}}' data-index='{{index}}'>{{item.title}}</view>
     </view>
 </block>
 

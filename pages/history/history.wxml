@@ -1,0 +1,10 @@
+<!--pages/history/history.wxml-->
+<view class="container">
+    <block wx:for="{{historyList}}">
+        <view class="line"></view>
+        <view class="history-item">
+            {{item.name}}
+        </view>
+    </block>
+
+</view>

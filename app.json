@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/card/card",
+    "pages/calculator/calculator",
+    "pages/mine/mine",
+    "pages/coupon/coupon",
+    "pages/history/history"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/card/card",
+        "text": "名片",
+        "iconPath": "img/tabBar/card.png",
+        "selectedIconPath": "img/tabBar/card_selected.png"
+      },
+      {
+        "pagePath": "pages/calculator/calculator",
+        "text": "计价器",
+        "iconPath": "img/tabBar/card.png",
+        "selectedIconPath": "img/tabBar/card_selected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "img/tabBar/calculator.png",
+        "selectedIconPath": "img/tabBar/calculator_selected.png"
+      }
+    ]
+  }
+}

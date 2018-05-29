@@ -1,0 +1,10 @@
+
+
+.amount{
+  display: inline;
+   align-content: center; 
+}
+
+.amount_input{
+  float: right;
+}

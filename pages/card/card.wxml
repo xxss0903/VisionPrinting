@@ -1,0 +1,58 @@
+<!--index.wxml-->
+<view class='container'>
+  <swiper class="swiper" indicator-dots="true" autoplay="{{autoplay}}" duration="{{duration}}">
+    <block wx:for="{{cards}}" wx:for-index="index">
+      <swiper-item>
+        <image src='{{item.url}}' class='slide-image' mode="aspectFill"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <block wx:for="{{cards}}">
+    <view class="card_cell" bindtap="tapCard">
+      <view class="card_cell_img">
+        <image src="{{item.url}}"></image>
+      </view>
+
+      <view class="card_cell_infos">
+        <view class="title">{{item.title}}</view>
+        <view class="info"> {{item.info}} </view>
+        <view class="price"> {{item.price}} </view>
+      </view>
+    </view>
+    <view class="line"></view>
+  </block>
+</view>
+
+
+
+
+
+
+
+
+
+
+<!-- <view class="container">
+    <swiper class='swiper' indicator-dots='true' autoplay='true' interval='2000' duration='1000'>
+      <block wx:for="{{cards}}" wx:for-index="index">
+        <swiper-item>
+          <image src='{{item.url}}' class='slide-image' mode="aspectFill"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+
+  <block ws:for="{{cards}}" wx:for-index="index">
+    <view class="card_cell">
+      <view class="card_cell_img">
+        <image src="{{item.url}}"></image>
+      </view>
+      <view class="card_cell_p">
+        <view class="card_cell_title">{{item.title}}</view>
+        <view class="card_cell_info">{{item.info}}</view>
+        <view class="card_cell_price">{{item.price}}</view>
+      </view>
+    </view>
+  </block>
+
+</view> -->

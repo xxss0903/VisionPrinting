@@ -1,0 +1,9 @@
+<!--pages/coupon/coupon.wxml-->
+<view class="container">
+    <block wx:for="{{couponList}}">
+        <view class="line"></view>
+        <view class="coupon-item">
+            {{item.name}}
+        </view>
+    </block>
+</view>

@@ -1,0 +1,43 @@
+<!--logs.wxml-->
+<view class='container'>
+  <view class="size">
+    <view class="selector_size">
+      <picker bindchange="changeSize" value="{{index}}" range="{{sizeList}}">
+        <view class="picker">
+          请选择大小: {{sizeList[index]}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="type">
+    <view class="selector_type">
+      <picker bindchange="changeType" value="{{index}}" range="{{typeList}}" range-key="{{'name'}}">
+        <view class="picker">
+          请选择类型: {{typeList[index].name}}
+        </view>
+      </picker>
+    </view>
+  </view>
+  <view class="coupon">
+    <view class="selector_coupon">
+      <picker bindchange="changeCoupon" value="{{index}}" range="{{couponList}}" range-key="{{'name'}}">
+        <view class="picker">
+          请选择优惠券: {{couponList[index].name}}
+        </view>
+      </picker>
+    </view>
+  </view>
+
+  <view class="amount">
+    请输入数量:
+    <input type="number" class="amount_input" value="1000"/>
+  </view>
+
+  <view class="result">
+    价格:{{price}}
+  </view>
+
+  <class class="btn_calculate">
+    <button type="default" bindtap="calculatePrice">计算价格</button>
+  </class>
+</view>

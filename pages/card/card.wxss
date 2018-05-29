@@ -1,0 +1,52 @@
+/**index.wxss**/
+
+.container{
+  height: 650px;
+  padding: 0;
+}
+
+/* .swiper{
+  width: 100%;
+  height: 180px;
+  margin-top: -100px;
+  align-content: center;
+  margin-bottom: 10px;
+} */
+.swiper{
+  width: 100%;
+}
+
+.slide-image{
+  display: block;
+  height: 280rpx;
+  width: 100%;
+}
+
+.card_cell{
+  background: green;
+  position: relative;
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+.card_cell_img image{
+  margin-left: 10px;
+  background: red;
+  width: 80px;
+  height: 80px;
+}
+
+.card_cell_infos{
+  font-size: 0.8rem;
+  width: 100%;
+  height: 80px;
+  align-content: center;
+  margin-left: 20px;
+}
+
+.line{
+  height: 10px;
+}

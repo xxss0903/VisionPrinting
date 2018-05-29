@@ -1,0 +1,12 @@
+<!--mine.wxml-->
+<view class='container'>
+<image class="avatar" src='{{userInfo.avatarUrl}}' background-size="cover"></image>
+
+<block wx:for="{{mineList}}">
+    <view class="line"></view>
+    <view class="mine-item" bindtap="tapMineItem" data-url="{{item.url}}">
+        <view class="mine-title">{{item.title}}</view>
+    </view>
+</block>
+
+</view>

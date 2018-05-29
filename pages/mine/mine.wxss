@@ -1,0 +1,21 @@
+/* mine.wxss */
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 40px;
+}
+
+.mine-item{
+    background: red;
+    font-size: 18px;
+    height: 40px;
+    width: 100%;
+}
+
+.line{
+    height: 1px;
+    background: black;
+    width: 100%;
+}
